@@ -1,10 +1,10 @@
 import React from 'react';
 
-const List = ({people}) => { // destructuring the people prop created in app.js
+const List = ({ people }) => { // destructuring the people prop created in app.js
   return (
     <>
       {people.map((person) => {
-        const {id, name, age, image} = person;
+        const { id, name, age, image } = person;
         // creating a new array (map method) with the returned values from the data.js file (id, name, age, image) and setting it to the person variable
         return <article key={id} className="person">
           <img src={image} alt={name} />
@@ -14,7 +14,7 @@ const List = ({people}) => { // destructuring the people prop created in app.js
             <p>{age} Years Old</p>
           </div>
         </article>
-      } )}
+      })}
     </>
   );
 };

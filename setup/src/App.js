@@ -9,8 +9,11 @@ function App() {
       <section className="container">
         <h3>{people.length} Birthday's Today</h3>
         {/* Accessing the number of birthdays via the number of items (objects) in the array in the data.js file */}
-        <List people={people} /> {/* Display List Component w/ people state value included */}
-        <button onClick={() => console.log('You Clicked Me')}>Clear all</button>
+        <List people={people} /> 
+         {/* Display List Component w/ people state value included */}
+        <button onClick={() => setPeople([])}
+        // Resets the list by setting the value to an empty array (using the setPeople array)
+        >Clear all</button>
       </section>
     </main>
   );
