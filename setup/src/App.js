@@ -7,8 +7,9 @@ function App() {
   return (
     <main>
       <section className="container">
-        <h3>{people.length} Birthday's Today</h3>
+        <h2 style={{textAlign:`center`, textDecoration: `underline`}}>{people.length} Born Today</h2>
         {/* Accessing the number of birthdays via the number of items (objects) in the array in the data.js file */}
+        <h4 style={{textAlign:`center`}}>People Born on November 22</h4>
         <List people={people} /> 
          {/* Display List Component w/ people state value included */}
         <button onClick={() => setPeople([])}
